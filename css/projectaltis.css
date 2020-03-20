@@ -1,0 +1,251 @@
+html {
+  background-image: url("../images/backgrounds/cube.png");
+  background-repeat: repeat;
+  animation: fadein 1.5s;
+  -moz-animation: fadein 1.5s; /* Firefox */
+  -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+  -o-animation: fadein 1.5s; /* Opera */
+}
+
+@-webkit-keyframes bgscroll {
+	from {background-position:0 0;}
+	to {background-position:1248px 676px;}
+}
+
+.alits-header {
+  height: auto;
+  background: url("../images/banners/banner_ttpa.png");
+  -webkit-animation:bgscroll 30s infinite linear;
+}
+
+.no-padding-top {
+  padding-top: 0px !important;
+}
+
+.no-border-radius {
+  border-radius: 0px !important;
+}
+
+.banner {
+  width: 600px;
+  height: 220px;
+  right: 0;
+  position: absolute;
+}
+
+.banner-container {
+  height: 168px; /* Calculated because of the height of the top navbar and the banner size (220px banner size - 52px (3.25rem)) */
+  padding-top: 84px; /* Calculated due to container / 2 */
+}
+
+.twitter_box {
+  background-color: white;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  display: block;
+  padding: 4px;
+}
+
+.topbar {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+.topbar-item a, a.topbar-item {
+  color: #FFF !important;
+  overflow: hidden;
+}
+
+#group-tracker {
+  margin-right: 0.75rem;
+}
+
+
+
+.logo {
+  background-image: url("../images/logos/logo_default.png");
+  background-size: cover;
+  width: 250px;
+  height: 130px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.columns {
+	margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #logo {
+    background-image: url("../images/logos/logo_default.png");
+    background-size: cover;
+    width: 250px;
+    height: 130px;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s ease;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.section {
+    padding: 0.5em;
+
+}
+}
+
+#logo:hover {
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.container {
+  position: relative;
+}
+.container--flex {
+  display: flex;
+  /* establish flex container */
+  justify-content: center;
+  /* center items vertically, in this case */
+  align-items: center;
+  /* center items horizontally, in this case */
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 960px;
+  }
+
+  .container.is-fluid {
+    margin: 0 20px;
+    max-width: none;
+    width: auto;
+  }
+}
+@media screen and (min-width: 1192px) {
+  .container {
+    max-width: 1152px;
+    width: 1152px;
+  }
+}
+@media screen and (min-width: 1384px) {
+  .container {
+    max-width: 1344px;
+    width: 1344px;
+  }
+}
+.margin-bottom {
+  margin-bottom: 30px;
+}
+
+.margin-bottom-rem {
+  margin-bottom: 1.5rem;
+}
+
+.alignment-sidebar {
+  text-align: center;
+}
+
+.small-font {
+  font-size: 11px;
+}
+
+.blockquote-margin {
+  margin-top: 5px;
+}
+
+.article-image {
+  border-radius: 5px;
+  /*width: 300px;
+  height: 300px*/
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* wrapper */
+.has-dropdown:hover .dropdown {
+  display: block;
+}
+
+/* remove padding to avoid unhandled clicks on empty space of button */
+.has-dropdown button {
+  padding: 0;
+}
+
+/* expand label to handle click on any part of button. Set you own padding if .is-medium or .is-large */
+.has-dropdown button label {
+  padding: 4px 10px;
+}
+
+/* dropdown basic */
+.dropdown {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+}
+
+#nav-toggle-state {
+  display: none;
+}
+
+#nav-toggle-state:checked ~ .nav-menu {
+  display: block;
+}
+
+#nav-toggle-state-2 {
+  display: none;
+}
+
+#nav-toggle-state-2:checked ~ #altis-nav {
+  display: block;
+}
+
+
+
+.district-status {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: gray;
+    margin: auto;
+    -webkit-box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.5);
+}
+
+.online {
+    background-color: #10d410;
+}
